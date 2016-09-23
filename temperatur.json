@@ -1,0 +1,20 @@
+{"index":{"_id":"1"}}
+{ "@timestamp": "2000-01-01T00:01:00", "value": 20 }
+{"index":{"_id":"2"}}
+{ "@timestamp": "2000-01-01T00:02:00", "value": 15 }
+{"index":{"_id":"3"}}
+{ "@timestamp": "2000-01-01T00:03:00", "value": 13 }
+{"index":{"_id":"4"}}
+{ "@timestamp": "2000-01-01T00:04:00", "value": 10 }
+{"index":{"_id":"5"}}
+{ "@timestamp": "2000-01-01T00:05:00", "value": 40 }
+{"index":{"_id":"6"}}
+{ "@timestamp": "2000-01-01T00:06:00", "value": 35 }
+{"index":{"_id":"7"}}
+{ "@timestamp": "2000-01-01T00:07:00", "value": 30 }
+{"index":{"_id":"8"}}
+{ "@timestamp": "2000-01-01T00:08:00", "value": 27 }
+{"index":{"_id":"9"}}
+{ "@timestamp": "2000-01-01T00:09:00", "value": 24 }
+{"index":{"_id":"10"}}
+{ "@timestamp": "2000-01-01T00:10:00", "value": 20 }

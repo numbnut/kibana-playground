@@ -1,0 +1,30 @@
+version: '2'
+services:
+################################### KIBANA
+  kibana:
+    build: 
+      context: ./kibana
+    volumes:
+      - ./kibana/config/:/app/kibana-repo/config/
+    ports:
+      - "80:5601"
+    depends_on:
+      - es
+    networks:
+      - kibana_playground
+################################### ELASTICSEARCH
+  es:
+    image: elasticsearch:2.4
+    command: elasticsearch -Des.network.host=0.0.0.0
+    volumes:
+     - ./docker-volumes/es-data/:/usr/share/elasticsearch/data
+     - /etc/localtime:/etc/localtime:ro
+    environment:
+      ES_HEAP_SIZE: 2g
+    ports:
+      - "9200:9200"
+    networks:
+      - kibana_playground
+networks:
+  kibana_playground:
+    driver: bridge
